@@ -121,10 +121,12 @@ nav ul details p:hover{
 .main-cards__container{
     z-index: 8;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
+    grid-template-columns:5% auto auto 5%;
     justify-content: center;
-    width:65%;
-    margin-inline:auto;
+    gap: 10px;
+    
+    
+
 }
 .main-cards__container h1 a{
     text-decoration: none;
@@ -162,7 +164,7 @@ nav ul details p:hover{
     transition: all 0.1s ease-in;
 }
 .main-cards__img{
-    width: 900px;
+    width: 600px;
 }
 .main-cards__img #img2:hover{
     opacity: 0;
@@ -183,4 +185,8 @@ nav ul details p:hover{
         .main-last__Alltext{
             margin-top: 10%;
         }
+}
+.spanned a{
+    text-decoration: none;
+    color: #000;
 }
