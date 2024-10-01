@@ -524,7 +524,7 @@ nav ul .shopping-M{
     margin-bottom: 1%;
 }
 .main-cards__img img{
-    width:600px;
+    width:100%;
     height: 350px; 
     position: absolute;
     object-fit: cover;
