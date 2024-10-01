@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+html{
+    scroll-behavior: smooth;
+}
 *{
     box-sizing: border-box;
     padding: 0;
@@ -23,6 +26,13 @@ nav{
     margin: 20px;
     max-height: 45px;
 }
+nav svg{
+    color:rgba(237,193,178,255);
+    cursor: pointer;
+}
+nav svg:hover{
+    color:rgba(237,193,178,0.8);
+}
 nav ul{
     display: flex;
     gap:40px;
@@ -42,6 +52,9 @@ nav ul li a{
     font-size: 12px;
     word-spacing: 2px;
 }
+nav ul li a:hover{
+    color:rgba(237,193,178,0.8);
+}
 nav ul li i{
     color:rgba(237,193,178,255);
     font-size: 30px;
@@ -49,10 +62,15 @@ nav ul li i{
 }
 nav ul details summary{
     z-index: 2;
+    color:rgba(237,193,178,255); 
 }
 nav ul details{
     position: relative;
     top:10%;
+     
+}
+nav ul details summary:hover{
+    color:rgba(237,193,178,0.8); 
 }
 .is-active-works{
     padding-left: 15px;
@@ -103,10 +121,14 @@ summary{
 summary::after{
     margin-left:1ch;
     display: inline-block;
-    content:'➤';
+    content:'▼';
+    font-size: 8px;
 }
 details[open] > summary::after{
-    transform: rotate(90deg);
+    transform: rotate(180deg);
+}
+details[open] > summary{
+    color: white;
 }
 .header-main__text p{
     font-size: 19px;
@@ -114,6 +136,7 @@ details[open] > summary::after{
 .header-main svg{
     position: absolute;
     top:70%;
+    left: 49%;
     margin-inline: auto;
     font-size: 30px;
     transition: all 0.2s ease-in;
@@ -246,7 +269,16 @@ details[open] > summary::after{
     display: flex;
     flex-wrap: wrap;
     gap:10px;
-    
+}
+@media(min-width: 1758px){
+    .ALL-CARDS-DOWN{
+        width: 65%;
+    }
+}
+@media(max-width: 1757px){
+    .ALL-CARDS-DOWN{
+        width: 100%;
+    }
 }
 .container{
     max-width: 1170px; 
@@ -290,6 +322,10 @@ ul{
     border-radius: 15px;
     outline:none;
     border: none;
+    cursor: pointer;
+}
+.footer-col ul button:hover{
+    background-color: rgb(143, 122, 140, 0.6);
 }
 .footer-col ul p{
     color: rgba(237,193,178,255);

@@ -494,9 +494,6 @@ nav ul .shopping-M{
     grid-template-columns:1fr;
     justify-content: center;
     gap: 10px;
-    
-    
-
 }
 .main-cards__container h1 a{
     text-decoration: none;
