@@ -841,7 +841,6 @@ margin-bottom: 40px;
     .header-main svg{
         position: absolute;
         top:70%;
-        left:45%;
         margin-inline: auto;
         font-size: 30px;
         transition: all 0.2s ease-in;
@@ -865,7 +864,7 @@ margin-bottom: 40px;
 
 
 
-        
+
     }
     .main-cards__container h1 a{
         text-decoration: none;
